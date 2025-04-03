@@ -7,13 +7,13 @@ PathfindingJS is a JavaScript library that implements different algorithms to fi
 You can install the library using Yarn:
 
 ```sh
-yarn add pathfinding-js
+yarn add demyanovs/pathfinding-js
 ```
 
 Or using npm:
 
 ```sh
-npm install pathfinding-js
+npm install demyanovs/pathfinding-js
 ```
 
 ## Usage
