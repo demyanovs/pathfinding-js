@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pathfinding. Dijkstra</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="path-find-container">
+        <div class="path-find-canvas">
+            <canvas id="canvas" width="1000px" height="530px"></canvas>
+            <div>
+                <p>Click on a grid cell to add/remove a wall node.</p>
+            </div>
+            <div class="container menu">
+                <div class="column column-center">
+                    <div>Start node:</div>
+                    <div>Goal node:</div>
+                </div>
+                <div class="column column-left">
+                    <div>
+                        <label for="x_start">X </label>
+                        <input type="text" value="3" id="x_start" maxlength="2">
+                        <label for="y_start">Y </label>
+                        <input type="text" value="3" id="y_start" maxlength="2">
+                    </div>
+                    <div>
+                        <label for="x_goal">X </label>
+                        <input type="text" value="18" id="x_goal" maxlength="2" data-v="9">
+                        <label for="y_goal">Y </label>
+                        <input type="text" value="6" id="y_goal" maxlength="2" data-v="6">
+                    </div>
+                </div>
+                <div class="column column-right" style="padding-left: 40px">
+                    <input type="button" value="Run" id="start-button">
+                </div>
+            </div>
+        </div>
+        <div class="search-info">
+            <div class="path">
+                <p>
+                    <span><b>Path</b>: </span>
+                    <span class="path-list">...</span>
+                </p>
+            </div>
+            <div class="cost">
+                <p>
+                    <span><b>Cost</b>: </span>
+                    <span id="cost-value">...</span>
+                </p>
+            </div>
+            <div class="reachable">
+                <p>
+                    <span><b>Reachable</b>: </span>
+                    <span class="reachable-list">...</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
